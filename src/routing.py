@@ -31,7 +31,7 @@ import networkx as nx
 # lambda=0.0 → pure trust routing (ignores distance)
 # lambda=1.0 → pure distance routing (same as Dijkstra)
 # lambda=0.3 → optimal balance (validated via grid search)
-LAMBDA = 0.3
+LAMBDA = 0.7
 
 
 # ═══════════════════════════════════════════════════

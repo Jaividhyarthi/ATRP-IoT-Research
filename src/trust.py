@@ -25,10 +25,10 @@ import math
 import random
 
 # ── Constants ──────────────────────────────────────
-W1 = 0.30   # Uptime weight
-W2 = 0.35   # Packet reliability weight — highest, primary failure mode
-W3 = 0.20   # Latency weight
-W4 = 0.15   # Energy weight — lowest, predictive not current
+W1 = 0.50   # Uptime weight
+W2 = 0.25   # Packet reliability weight — highest, primary failure mode
+W3 = 0.25   # Latency weight
+W4 = 0.10   # Energy weight — lowest, predictive not current
 
 K_DECAY     = 0.05    # Decay constant — how fast trust erodes without new data
 MAX_LAT     = 200.0   # Maximum acceptable latency in ms
