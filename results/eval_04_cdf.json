@@ -1,0 +1,18 @@
+{
+  "atrp": {
+    "label": "ATRP",
+    "pdr": 39.76
+  },
+  "dijkstra": {
+    "label": "Dijkstra",
+    "pdr": 33.58
+  },
+  "aodv": {
+    "label": "AODV",
+    "pdr": 59.51
+  },
+  "rpl": {
+    "label": "RPL",
+    "pdr": 38.96
+  }
+}
