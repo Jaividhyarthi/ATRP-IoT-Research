@@ -1,0 +1,502 @@
+[
+  {
+    "node": 0,
+    "type": "GATEWAY",
+    "tw": 0.9773518366697501,
+    "zone": "TRUSTED",
+    "battery_pct": 56.0,
+    "uptime_pct": 102.0,
+    "loss_pct": 2.6,
+    "status": "ONLINE"
+  },
+  {
+    "node": 1,
+    "type": "SENSOR",
+    "tw": 0.9680667934010626,
+    "zone": "TRUSTED",
+    "battery_pct": 47.5,
+    "uptime_pct": 101.1,
+    "loss_pct": 1.7,
+    "status": "ONLINE"
+  },
+  {
+    "node": 2,
+    "type": "SENSOR",
+    "tw": 0.9877669890904329,
+    "zone": "TRUSTED",
+    "battery_pct": 62.6,
+    "uptime_pct": 102.3,
+    "loss_pct": 3.1,
+    "status": "ONLINE"
+  },
+  {
+    "node": 3,
+    "type": "SENSOR",
+    "tw": 0.9745952843518075,
+    "zone": "TRUSTED",
+    "battery_pct": 51.2,
+    "uptime_pct": 101.2,
+    "loss_pct": 1.8,
+    "status": "ONLINE"
+  },
+  {
+    "node": 4,
+    "type": "SENSOR",
+    "tw": 0.9698801054659176,
+    "zone": "TRUSTED",
+    "battery_pct": 52.0,
+    "uptime_pct": 101.2,
+    "loss_pct": 1.8,
+    "status": "ONLINE"
+  },
+  {
+    "node": 5,
+    "type": "SENSOR",
+    "tw": 0.9951862962248514,
+    "zone": "TRUSTED",
+    "battery_pct": 61.5,
+    "uptime_pct": 103.3,
+    "loss_pct": 4.0,
+    "status": "ONLINE"
+  },
+  {
+    "node": 6,
+    "type": "SENSOR",
+    "tw": 0.9798523988752074,
+    "zone": "TRUSTED",
+    "battery_pct": 55.6,
+    "uptime_pct": 101.3,
+    "loss_pct": 2.0,
+    "status": "ONLINE"
+  },
+  {
+    "node": 7,
+    "type": "SENSOR",
+    "tw": 0.6081838111135686,
+    "zone": "MONITOR",
+    "battery_pct": 43.8,
+    "uptime_pct": 101.1,
+    "loss_pct": 2.2,
+    "status": "FAILED"
+  },
+  {
+    "node": 8,
+    "type": "SENSOR",
+    "tw": 0.3695480373274389,
+    "zone": "AVOID",
+    "battery_pct": 45.5,
+    "uptime_pct": 100.0,
+    "loss_pct": 1.1,
+    "status": "FAILED"
+  },
+  {
+    "node": 9,
+    "type": "SENSOR",
+    "tw": 0.9796024017094646,
+    "zone": "TRUSTED",
+    "battery_pct": 54.5,
+    "uptime_pct": 102.6,
+    "loss_pct": 3.2,
+    "status": "ONLINE"
+  },
+  {
+    "node": 10,
+    "type": "SENSOR",
+    "tw": 0.9912667992543679,
+    "zone": "TRUSTED",
+    "battery_pct": 62.5,
+    "uptime_pct": 102.3,
+    "loss_pct": 2.9,
+    "status": "ONLINE"
+  },
+  {
+    "node": 11,
+    "type": "SENSOR",
+    "tw": 0.9599782111325446,
+    "zone": "TRUSTED",
+    "battery_pct": 41.9,
+    "uptime_pct": 100.5,
+    "loss_pct": 1.0,
+    "status": "ONLINE"
+  },
+  {
+    "node": 12,
+    "type": "SENSOR",
+    "tw": 0.9804135062149959,
+    "zone": "TRUSTED",
+    "battery_pct": 61.2,
+    "uptime_pct": 100.8,
+    "loss_pct": 1.5,
+    "status": "ONLINE"
+  },
+  {
+    "node": 13,
+    "type": "SENSOR",
+    "tw": 0.9679632430448826,
+    "zone": "TRUSTED",
+    "battery_pct": 48.5,
+    "uptime_pct": 100.6,
+    "loss_pct": 1.1,
+    "status": "ONLINE"
+  },
+  {
+    "node": 14,
+    "type": "SENSOR",
+    "tw": 0.9777101540432614,
+    "zone": "TRUSTED",
+    "battery_pct": 56.2,
+    "uptime_pct": 101.4,
+    "loss_pct": 2.0,
+    "status": "ONLINE"
+  },
+  {
+    "node": 15,
+    "type": "SENSOR",
+    "tw": 0.2477668150948094,
+    "zone": "AVOID",
+    "battery_pct": 47.6,
+    "uptime_pct": 99.4,
+    "loss_pct": 0.6,
+    "status": "FAILED"
+  },
+  {
+    "node": 16,
+    "type": "SENSOR",
+    "tw": 0.5233268411062031,
+    "zone": "MONITOR",
+    "battery_pct": 42.8,
+    "uptime_pct": 99.5,
+    "loss_pct": 0.5,
+    "status": "FAILED"
+  },
+  {
+    "node": 17,
+    "type": "SENSOR",
+    "tw": 0.9691201445722423,
+    "zone": "TRUSTED",
+    "battery_pct": 50.4,
+    "uptime_pct": 100.0,
+    "loss_pct": 0.6,
+    "status": "ONLINE"
+  },
+  {
+    "node": 18,
+    "type": "SENSOR",
+    "tw": 0.9703014451857719,
+    "zone": "TRUSTED",
+    "battery_pct": 47.2,
+    "uptime_pct": 100.6,
+    "loss_pct": 1.1,
+    "status": "ONLINE"
+  },
+  {
+    "node": 19,
+    "type": "SENSOR",
+    "tw": 0.4391619407333587,
+    "zone": "MONITOR",
+    "battery_pct": 51.6,
+    "uptime_pct": 100.6,
+    "loss_pct": 1.2,
+    "status": "ONLINE"
+  },
+  {
+    "node": 20,
+    "type": "SENSOR",
+    "tw": 0.9644987993805659,
+    "zone": "TRUSTED",
+    "battery_pct": 47.8,
+    "uptime_pct": 100.0,
+    "loss_pct": 0.6,
+    "status": "ONLINE"
+  },
+  {
+    "node": 21,
+    "type": "SENSOR",
+    "tw": 0.9888374436851055,
+    "zone": "TRUSTED",
+    "battery_pct": 77.1,
+    "uptime_pct": 101.2,
+    "loss_pct": 2.5,
+    "status": "ONLINE"
+  },
+  {
+    "node": 22,
+    "type": "SENSOR",
+    "tw": 0.9669499375178452,
+    "zone": "TRUSTED",
+    "battery_pct": 46.8,
+    "uptime_pct": 100.6,
+    "loss_pct": 1.1,
+    "status": "ONLINE"
+  },
+  {
+    "node": 23,
+    "type": "SENSOR",
+    "tw": 0.2950240087810397,
+    "zone": "AVOID",
+    "battery_pct": 60.5,
+    "uptime_pct": 102.1,
+    "loss_pct": 3.5,
+    "status": "FAILED"
+  },
+  {
+    "node": 24,
+    "type": "SENSOR",
+    "tw": 0.9931194255111364,
+    "zone": "TRUSTED",
+    "battery_pct": 64.0,
+    "uptime_pct": 101.6,
+    "loss_pct": 2.4,
+    "status": "ONLINE"
+  },
+  {
+    "node": 25,
+    "type": "SENSOR",
+    "tw": 0.9718618627436068,
+    "zone": "TRUSTED",
+    "battery_pct": 50.5,
+    "uptime_pct": 101.2,
+    "loss_pct": 1.8,
+    "status": "ONLINE"
+  },
+  {
+    "node": 26,
+    "type": "SENSOR",
+    "tw": 0.9686411997528983,
+    "zone": "TRUSTED",
+    "battery_pct": 48.3,
+    "uptime_pct": 101.1,
+    "loss_pct": 1.7,
+    "status": "ONLINE"
+  },
+  {
+    "node": 27,
+    "type": "SENSOR",
+    "tw": 0.2395880382247462,
+    "zone": "AVOID",
+    "battery_pct": 53.4,
+    "uptime_pct": 101.3,
+    "loss_pct": 2.6,
+    "status": "FAILED"
+  },
+  {
+    "node": 28,
+    "type": "SENSOR",
+    "tw": 0.3605950971078279,
+    "zone": "AVOID",
+    "battery_pct": 63.6,
+    "uptime_pct": 102.4,
+    "loss_pct": 3.8,
+    "status": "FAILED"
+  },
+  {
+    "node": 29,
+    "type": "SENSOR",
+    "tw": 0.9757695454472334,
+    "zone": "TRUSTED",
+    "battery_pct": 53.0,
+    "uptime_pct": 100.0,
+    "loss_pct": 0.6,
+    "status": "ONLINE"
+  },
+  {
+    "node": 30,
+    "type": "SENSOR",
+    "tw": 0.9866216920188047,
+    "zone": "TRUSTED",
+    "battery_pct": 61.2,
+    "uptime_pct": 103.1,
+    "loss_pct": 3.8,
+    "status": "ONLINE"
+  },
+  {
+    "node": 31,
+    "type": "SENSOR",
+    "tw": 0.9582950790417485,
+    "zone": "TRUSTED",
+    "battery_pct": 39.5,
+    "uptime_pct": 100.0,
+    "loss_pct": 0.5,
+    "status": "ONLINE"
+  },
+  {
+    "node": 32,
+    "type": "SENSOR",
+    "tw": 0.9802799377814041,
+    "zone": "TRUSTED",
+    "battery_pct": 56.0,
+    "uptime_pct": 101.4,
+    "loss_pct": 2.0,
+    "status": "ONLINE"
+  },
+  {
+    "node": 33,
+    "type": "SENSOR",
+    "tw": 0.9849468740305785,
+    "zone": "TRUSTED",
+    "battery_pct": 60.2,
+    "uptime_pct": 102.9,
+    "loss_pct": 3.5,
+    "status": "ONLINE"
+  },
+  {
+    "node": 34,
+    "type": "SENSOR",
+    "tw": 0.994935003426396,
+    "zone": "TRUSTED",
+    "battery_pct": 71.2,
+    "uptime_pct": 101.9,
+    "loss_pct": 2.7,
+    "status": "ONLINE"
+  },
+  {
+    "node": 35,
+    "type": "SENSOR",
+    "tw": 0.966349032854648,
+    "zone": "TRUSTED",
+    "battery_pct": 45.5,
+    "uptime_pct": 100.0,
+    "loss_pct": 0.5,
+    "status": "ONLINE"
+  },
+  {
+    "node": 36,
+    "type": "SENSOR",
+    "tw": 0.9929360537680639,
+    "zone": "TRUSTED",
+    "battery_pct": 70.5,
+    "uptime_pct": 102.1,
+    "loss_pct": 3.0,
+    "status": "ONLINE"
+  },
+  {
+    "node": 37,
+    "type": "SENSOR",
+    "tw": 0.18584224820455167,
+    "zone": "AVOID",
+    "battery_pct": 57.1,
+    "uptime_pct": 100.0,
+    "loss_pct": 1.2,
+    "status": "FAILED"
+  },
+  {
+    "node": 38,
+    "type": "SENSOR",
+    "tw": 0.33682933145925253,
+    "zone": "AVOID",
+    "battery_pct": 50.8,
+    "uptime_pct": 100.6,
+    "loss_pct": 1.7,
+    "status": "FAILED"
+  },
+  {
+    "node": 39,
+    "type": "SENSOR",
+    "tw": 0.5889117458131294,
+    "zone": "MONITOR",
+    "battery_pct": 60.0,
+    "uptime_pct": 101.5,
+    "loss_pct": 3.0,
+    "status": "FAILED"
+  },
+  {
+    "node": 40,
+    "type": "SENSOR",
+    "tw": 0.9838009751172259,
+    "zone": "TRUSTED",
+    "battery_pct": 60.8,
+    "uptime_pct": 102.2,
+    "loss_pct": 2.9,
+    "status": "ONLINE"
+  },
+  {
+    "node": 41,
+    "type": "SENSOR",
+    "tw": 0.5682009521592735,
+    "zone": "MONITOR",
+    "battery_pct": 64.3,
+    "uptime_pct": 102.5,
+    "loss_pct": 4.0,
+    "status": "FAILED"
+  },
+  {
+    "node": 42,
+    "type": "SENSOR",
+    "tw": 0.5415629341801143,
+    "zone": "MONITOR",
+    "battery_pct": 62.2,
+    "uptime_pct": 103.2,
+    "loss_pct": 4.7,
+    "status": "FAILED"
+  },
+  {
+    "node": 43,
+    "type": "SENSOR",
+    "tw": 0.9710552945024807,
+    "zone": "TRUSTED",
+    "battery_pct": 47.7,
+    "uptime_pct": 101.7,
+    "loss_pct": 2.3,
+    "status": "ONLINE"
+  },
+  {
+    "node": 44,
+    "type": "SENSOR",
+    "tw": 0.968178773430858,
+    "zone": "TRUSTED",
+    "battery_pct": 49.0,
+    "uptime_pct": 100.6,
+    "loss_pct": 1.2,
+    "status": "ONLINE"
+  },
+  {
+    "node": 45,
+    "type": "SENSOR",
+    "tw": 0.9714782778014576,
+    "zone": "TRUSTED",
+    "battery_pct": 54.5,
+    "uptime_pct": 100.7,
+    "loss_pct": 1.3,
+    "status": "ONLINE"
+  },
+  {
+    "node": 46,
+    "type": "SENSOR",
+    "tw": 0.98756225883033,
+    "zone": "TRUSTED",
+    "battery_pct": 66.2,
+    "uptime_pct": 101.8,
+    "loss_pct": 2.6,
+    "status": "ONLINE"
+  },
+  {
+    "node": 47,
+    "type": "SENSOR",
+    "tw": 0.9533400968848154,
+    "zone": "TRUSTED",
+    "battery_pct": 39.0,
+    "uptime_pct": 99.5,
+    "loss_pct": 0.0,
+    "status": "ONLINE"
+  },
+  {
+    "node": 48,
+    "type": "SENSOR",
+    "tw": 0.14708586403829674,
+    "zone": "AVOID",
+    "battery_pct": 59.3,
+    "uptime_pct": 103.6,
+    "loss_pct": 4.9,
+    "status": "FAILED"
+  },
+  {
+    "node": 49,
+    "type": "SENSOR",
+    "tw": 0.9794449625510442,
+    "zone": "TRUSTED",
+    "battery_pct": 62.4,
+    "uptime_pct": 100.8,
+    "loss_pct": 1.6,
+    "status": "ONLINE"
+  }
+]
