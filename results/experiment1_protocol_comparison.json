@@ -1,0 +1,62 @@
+[
+  {
+    "protocol": "atrp",
+    "pdr": 15.08,
+    "mean_reroute": 0.88,
+    "mean_path_cost": 2.55,
+    "false_reroute_pct": 8.64,
+    "delivered": 754,
+    "total_packets": 5000,
+    "total_reroutes": 718,
+    "ticks": 1000,
+    "label": "ATRP (Ours)"
+  },
+  {
+    "protocol": "dijkstra",
+    "pdr": 11.3,
+    "mean_reroute": 1000.0,
+    "mean_path_cost": 2.32,
+    "false_reroute_pct": 0.0,
+    "delivered": 565,
+    "total_packets": 5000,
+    "total_reroutes": 0,
+    "ticks": 1000,
+    "label": "Dijkstra"
+  },
+  {
+    "protocol": "aodv",
+    "pdr": 13.94,
+    "mean_reroute": 1.51,
+    "mean_path_cost": 2.22,
+    "false_reroute_pct": 21.28,
+    "delivered": 697,
+    "total_packets": 5000,
+    "total_reroutes": 343,
+    "ticks": 1000,
+    "label": "AODV"
+  },
+  {
+    "protocol": "rpl",
+    "pdr": 14.64,
+    "mean_reroute": 1.23,
+    "mean_path_cost": 2.25,
+    "false_reroute_pct": 13.11,
+    "delivered": 732,
+    "total_packets": 5000,
+    "total_reroutes": 427,
+    "ticks": 1000,
+    "label": "RPL"
+  },
+  {
+    "protocol": "random",
+    "pdr": 1.06,
+    "mean_reroute": 0.32,
+    "mean_path_cost": 15.08,
+    "false_reroute_pct": 1.25,
+    "delivered": 53,
+    "total_packets": 5000,
+    "total_reroutes": 3109,
+    "ticks": 1000,
+    "label": "Random Walk"
+  }
+]
