@@ -1,0 +1,77 @@
+{
+  "atrp": {
+    "label": "ATRP",
+    "mean": {
+      "pdr": 39.11,
+      "reroute": 0.94,
+      "frr": 18.91,
+      "cost": 2.4
+    },
+    "std": {
+      "pdr": 2.07,
+      "reroute": 0.07,
+      "frr": 2.43,
+      "cost": 0.02
+    }
+  },
+  "dijkstra": {
+    "label": "Dijkstra",
+    "mean": {
+      "pdr": 30.54,
+      "reroute": 50.0,
+      "frr": 0.0,
+      "cost": 2.33
+    },
+    "std": {
+      "pdr": 1.85,
+      "reroute": 0.0,
+      "frr": 0.0,
+      "cost": 0.01
+    }
+  },
+  "aodv": {
+    "label": "AODV",
+    "mean": {
+      "pdr": 33.64,
+      "reroute": 1.45,
+      "frr": 36.1,
+      "cost": 2.28
+    },
+    "std": {
+      "pdr": 3.4,
+      "reroute": 0.21,
+      "frr": 1.14,
+      "cost": 0.03
+    }
+  },
+  "rpl": {
+    "label": "RPL",
+    "mean": {
+      "pdr": 43.72,
+      "reroute": 0.86,
+      "frr": 22.3,
+      "cost": 2.32
+    },
+    "std": {
+      "pdr": 2.53,
+      "reroute": 0.06,
+      "frr": 2.49,
+      "cost": 0.02
+    }
+  },
+  "random": {
+    "label": "Random Walk",
+    "mean": {
+      "pdr": 3.16,
+      "reroute": 0.32,
+      "frr": 7.15,
+      "cost": 15.04
+    },
+    "std": {
+      "pdr": 0.34,
+      "reroute": 0.0,
+      "frr": 0.97,
+      "cost": 0.18
+    }
+  }
+}

@@ -1,3 +1,31 @@
+"""
+simulation.py — ATRP Main Simulation Loop (Algorithm 4)
+ATRP Research | Jai Vidhyarthi | Synthara | 2026
+
+WHY THIS FILE:
+This is Algorithm 4 — ATRP_MAIN.
+It ties together graph.py, trust.py, and routing.py
+into a complete running IoT network simulation.
+
+Each tick simulates one second of real IoT network operation:
+  Phase 1 — Observe: collect network events (failures, recoveries)
+  Phase 2 — Update:  recompute TW scores for all nodes
+  Phase 3 — Route:   send packets using the selected protocol
+  Phase 4 — Record:  log delivery success/failure and path metrics
+
+We run this for every protocol separately on the same graph
+with the same random seed — fair comparison.
+
+METRICS WE COLLECT:
+  PDR  — Packet Delivery Rate (%) — primary metric
+  MRT  — Mean Reroute Time (ticks between path changes)
+  MPC  — Mean Path Cost (average hops per route)
+  FRR  — False Reroute Rate (% of unnecessary reroutes)
+
+v2 UPDATE:
+  tw_update now receives etx dict for 5-component TW formula
+"""
+
 import random
 import math
 import json
@@ -9,23 +37,33 @@ from trust   import tw_initialise, tw_update, BATTERY_MAX, ZONE_TRUSTED
 from routing import (atrp_route, dijkstra_route, aodv_route,
                      rpl_route, random_walk_route)
 
+# ── Simulation Parameters ───────────────────────────
 NUM_TICKS        = 1000
 FAILURE_RATE     = 0.02
 PACKETS_PER_TICK = 5
-LAMBDA           = 0.3
+LAMBDA           = 0.7
 RANDOM_SEED      = 42
 
 
 def run_simulation(G, protocol='atrp', num_ticks=NUM_TICKS,
                    failure_rate=FAILURE_RATE, lam=LAMBDA, seed=RANDOM_SEED):
+    """
+    Algorithm 4: ATRP_MAIN — Full simulation loop.
+    Same seed per protocol ensures fair controlled comparison.
+    """
     random.seed(seed)
     np.random.seed(seed)
 
-    nodes        = list(G.nodes())
-    tw, uptime, failures, tx_count, lat_sum, battery, total_t = tw_initialise(nodes)
+    nodes   = list(G.nodes())
+    tw, uptime, failures, tx_count, lat_sum, battery, total_t, etx = tw_initialise(nodes)
     failed_nodes = set()
     node_etx     = {n: random.uniform(1.0, 3.0) for n in nodes}
 
+    # Sync etx dict with node_etx
+    for n in nodes:
+        etx[n] = node_etx[n]
+
+    # Metrics trackers
     delivered      = 0
     total_packets  = 0
     reroute_ticks  = []
@@ -36,14 +74,16 @@ def run_simulation(G, protocol='atrp', num_ticks=NUM_TICKS,
 
     for tick in range(num_ticks):
 
-        # Phase 1 & 2: Observe + Update TW
+        # ── Phase 1 & 2: Observe events + Update TW ──
         for n in nodes:
             roll = random.random()
+
             if n in failed_nodes:
                 if roll < failure_rate * 3:
                     event = 'recover'
                     failed_nodes.discard(n)
                     node_etx[n] = random.uniform(1.0, 2.5)
+                    etx[n]      = node_etx[n]
                 else:
                     event = 'silent'
             elif battery[n] < 10:
@@ -52,15 +92,17 @@ def run_simulation(G, protocol='atrp', num_ticks=NUM_TICKS,
                 event = 'failure'
                 failed_nodes.add(n)
                 node_etx[n] = 9.0
+                etx[n]      = node_etx[n]
             elif roll < failure_rate * 2:
                 event = 'failure'
                 failures[n] += 1
             else:
                 event = 'observe'
-            tw_update(n, event, tw, uptime, failures,
-                      tx_count, lat_sum, battery, total_t, dt=1)
 
-        # Phase 3: Route packets
+            tw_update(n, event, tw, uptime, failures,
+                      tx_count, lat_sum, battery, total_t, etx, dt=1)
+
+        # ── Phase 3: Route packets ──
         for _ in range(PACKETS_PER_TICK):
             src = random.choice([n for n in nodes if n != GATEWAY])
             total_packets += 1
@@ -81,7 +123,7 @@ def run_simulation(G, protocol='atrp', num_ticks=NUM_TICKS,
             if path is None:
                 continue
 
-            # Phase 4: Record delivery
+            # ── Phase 4: Record delivery ──
             packet_delivered = True
             for node in path[1:]:
                 if node in failed_nodes:
@@ -107,6 +149,7 @@ def run_simulation(G, protocol='atrp', num_ticks=NUM_TICKS,
             prev_paths[src] = path
             path_costs.append(len(path) - 1)
 
+    # ── Compute final metrics ──
     pdr = round((delivered / max(1, total_packets)) * 100, 2)
 
     if len(reroute_ticks) > 1:
@@ -180,10 +223,10 @@ def run_all_protocols(G):
 
 if __name__ == '__main__':
     print("\n" + "="*60)
-    print("  ATRP SIMULATION — Algorithm 4: Main Loop")
+    print("  ATRP SIMULATION v2 — Algorithm 4: Main Loop")
     print("="*60)
 
     G       = build_iot_graph()
     results = run_all_protocols(G)
 
-    print("\n  simulation.py -- DONE\n")
+    print("\n  simulation.py v2 -- DONE\n")
